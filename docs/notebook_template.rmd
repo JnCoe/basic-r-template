@@ -1,0 +1,44 @@
+---
+title: "[TITLE]"
+author: "[AUTHOR]"
+output: 
+  html_document:
+    theme: cosmo
+    toc: true
+    toc_float:
+      collapsed: false
+    number_sections: true
+    df_print: paged
+    code_folding: show
+#    self_contained: false # Descomente caso deseje incluir gráficos usando GoogleVis
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(warning = FALSE)
+options(scipen = 9999)
+```
+
+```{css, echo=FALSE}
+pre:not(.r) {
+  color: #b0b0b0;
+}
+
+pre {
+  width: 80%;
+  margin-inline: auto;
+}
+
+.table {
+  width: 60%;
+  margin-inline: auto;
+}
+
+.word {
+  font-size: 15px;
+}
+```
+
+```{r, echo=FALSE, results='asis'}
+cat('<h5 class="atualizacao">Última atualização: ',format(Sys.time(), "%d %h %y | %H:%m"),'</h5>')
+```
